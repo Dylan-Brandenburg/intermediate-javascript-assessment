@@ -14,7 +14,14 @@
 
 // CODE HERE...
 
-
+function callBinding(magicAnimals, updateAnimal, id) {
+  for (let i = 0; i < magicAnimals.length; i++) {
+    console.log(magicAnimals[i].id);
+    if (magicAnimals[i].id == id) {
+      return updateAnimal("Trogdor");
+    }
+  }
+}
 
 // *************
 // * PROBLEM 2 *
@@ -29,7 +36,15 @@
 
 // CODE HERE...
 
-
+function applyBinding(magicAnimals, updateAnimal, id) {
+  let arr = ["being majestic", "eating rainbows"];
+  for (let i = 0; i < magicAnimals.length; i++) {
+    console.log(magicAnimals[i]);
+    if (magicAnimals[i].id == id) {
+      return updateAnimal(magicAnimals[i], arr);
+    }
+  }
+}
 
 // *************
 // * PROBLEM 3 *
@@ -45,11 +60,12 @@
 // After the timeout is completed, the promise should be resolved with the new updated foo variable.
 // NOTE: Manually invoking your function here will alter the 'foo' variable before tests run, causing them to fail.
 
-var foo;
+// var foo;
 
 // CODE HERE...
-
-
+// function promiseMe($q) {
+//   setTimeout($q, 20, "bar");
+// }
 
 // *************
 // * PROBLEM 4 *
@@ -64,3 +80,5 @@ var foo;
 // and then resolve the array as you complete your promise.
 
 // CODE HERE...
+
+// function emailList($q, $http) {}
