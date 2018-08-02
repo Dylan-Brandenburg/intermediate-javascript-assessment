@@ -125,7 +125,7 @@ mustang.drive();
 String.prototype.grammarPolice = function() {
   newStr = this.toLowerCase().split(" ");
   for (let i = 0; i < newStr.length; i++) {
-    newStr[i] = newStr[i].charAt(0).toUppperCase() + newStr[i].substring(1);
+    newStr[i] = newStr[i].charAt(0).toUpperCase() + newStr[i].substring(1);
   }
   newStr = newStr.join(" ");
   return newStr;
